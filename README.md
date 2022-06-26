@@ -48,3 +48,8 @@ ________
 
 //the config file is preconfig by me. but When I change dir to the 'work_dir' and try to make samsung_n971n_kernel It does not work.
 "
+
+#How to build
+lunch these commands
+__
+chroot ./rootfs && make -j3 (you also can run make menuconfig,the config file is already in .config,so you don't have to run ./configure;but install libncurses-dev first )
