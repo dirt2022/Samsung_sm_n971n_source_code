@@ -6,9 +6,13 @@ run 'apt install chroot' in your tty,then input 'mount --rbind /dev $path_to_thi
 /*
  ^
 arch/arm64/kernel/vdso/gettimeofday.S:1:0: error: unknown feature modifier 'lse'
+
+________
  /*
  ^
 arch/arm64/kernel/vdso/sigreturn.S:1:0: error: unknown feature modifier 'lse'
+________
+
  /*
  ^
 
