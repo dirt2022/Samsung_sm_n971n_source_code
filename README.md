@@ -4,7 +4,7 @@ causes the network is slow so I will fork a lot of repos.
 VERSION:N971N , ANDROID 12, N971NKSU2GULF .
 # HOW to use?
 run these commands on your tty
-__
+_____
 "apt install chroot debootstrap -y"  &&
 "debootstrap --arch=amd64 bullseye ./rootfs" &&
 sudo mount --rbind /dev ./rootfs/dev &&
