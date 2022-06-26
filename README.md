@@ -1,5 +1,6 @@
 # Samsung_sm_n971n_source_code
 It is broken!! It packed whth android NDK r17c,samsung N971N source code,and debian_chroot_environment(base)
+causes the network is slow so I will fork a lot of repos.
 # HOW to use?
 run 'apt install chroot' in your tty
 then input 'mount --rbind /dev $path_to_this_DIR/dev' 
