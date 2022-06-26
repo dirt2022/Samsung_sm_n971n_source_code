@@ -51,5 +51,7 @@ ________
 
 # How to build
 lunch these commands
+
 __
+
 chroot ./rootfs && make -j3 (you also can run make menuconfig,the config file is already in .config,so you don't have to run ./configure;but install libncurses-dev first )
