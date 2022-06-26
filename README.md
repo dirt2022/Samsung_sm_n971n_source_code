@@ -2,12 +2,21 @@
 It is broken!! It packed whth android NDK r17c,samsung N971N source code,and debian_chroot_environment(base)
 causes the network is slow so I will fork a lot of repos.
 # HOW to use?
-run 'apt install chroot' in your tty
-then input 'mount --rbind /dev $path_to_this_DIR/dev' 
-___
-'mount --rbind /proc $path_to_this_dir/proc' 
-___
-'mount --rbind /sys $path_th_this_DIR/sys'
+run these commands
+"apt install chroot debootstrap -y"
+"debootstrap --arch=amd64 bullseye ./rootfs"
+sudo mount --rbind /dev ./rootfs/dev
+sudo mount --rbind /proc ./rootfs/proc
+sudo mount --rbind /sys ./rootfs/sys
+sudo chroot ./rootfs
+apt update
+apt install build-essential bc bison binutils git -y
+git clone https://github.com/dirt2022/Samsung_sm_n971n_source_code/ ./work
+mkdir tools
+wget https://dl.google.com/android/repository/android-ndk-r17c-linux-x86_64.zip
+mv android-ndk-r17c-linux-x86_64.zip ./tools
+cd tools
+unzip android-ndk-r17c-linux-x86_64.zip && rm android-ndk-r17c-linux-x86_64.zip
 # BUGS
 /*
  ^
